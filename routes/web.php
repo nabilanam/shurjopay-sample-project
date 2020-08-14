@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+
+Route::get('/', 'PaymentController@index');
+Route::post('/pay', 'PaymentController@pay');
